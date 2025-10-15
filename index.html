@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE PERSONALIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo">
+       <img src="FF.jpg" alt="Logo Fayyadh" class="logo-bulat">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Profil Kami</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Kontak</a></li>
+    </ul>
+    
+    <div class="login-container">
+        <form class="login-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+    </div>
+    </nav>
+    <header class="hero-banner">
+        <div class="banner-content">
+            <h1>Halo, <span id="username">Tamu</span>!</h1>
+            <p>Selamat datang di Website Kami.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-company">
+            <h2>Siapa Aku</h2>
+            <div class="separator"></div>
+            <p class="summary">
+                FF adalah Personalia yang sedang belajar untuk menemukan masa depan yang lebih baik.
+            </p>
+            <p>
+                Saat ini bekerja sebagai buruh di suatu perusahaan.
+            </p>
+        </section>
+
+        <section class="vision-mission-grid">
+            <div class="vm-card vision">
+                <i class="fas fa-eye fa-3x"></i>
+                <h3>Visi Kami</h3>
+                <p>
+                    Menjadi individu yang memiliki inovasi, tanggung jawab, sopan yang beretika.
+                </p>
+            </div>
+            
+            <div class="vm-card mission">
+                <i class="fas fa-rocket fa-3x"></i>
+                <h3>Misi Kami</h3>
+                <ul>
+                    <li>Bisa menjadi seorang Data Analyst.</li>
+                    <li>Bisa menjadi orang yang menciptakan lingkungan kerja yang inklusif dan mendorong kreativitas.</li>
+                    <li>Berkontribusi secara positif pada keluarga dan masyarakat.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="core-values">
+            <h2>Nilai Inti</h2>
+            <div class="separator"></div>
+            <div class="values-grid">
+                <div class="value-item">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <h4>Integritas</h4>
+                    <p>Bertindak dengan kejujuran dan etika tertinggi dalam setiap keputusan.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-lightbulb fa-2x"></i>
+                    <h4>Inovasi</h4>
+                    <p>Selalu mencari cara baru dan lebih baik untuk memecahkan masalah.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-handshake fa-2x"></i>
+                    <h4>Kolaborasi</h4>
+                    <p>Bekerja sama secara efektif untuk mencapai tujuan bersama.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-heart fa-2x"></i>
+                    <h4>Customer Focus</h4>
+                    <p>Menjadikan kebutuhan sebagai prioritas utama.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>Sertifikasi Saya</h2>
+            <div class="separator white"></div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="number">120+</p>
+                    <p class="label">Statistika Dasar Untuk Data Analyst</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-globe-asia fa-3x"></i>
+                    <p class="number">10+</p>
+                    <p class="label">Intro to Data Analyst</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award fa-3x"></i>
+                    <p class="number">5</p>
+                    <p class="label">Strategi Optimasi Konten pada SEO</p>
+                </div>
+                 <div class="stat-item">
+                    <i class="fas fa-award fa-3x"></i>
+                    <p class="number">5</p>
+                    <p class="label">Intro to Software Engineering</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-form-section">
+            <h2>Kirim Pesan kepada Kami</h2>
+            <div class="separator"></div>
+            
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan Anda:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+
+            <div id="resultMessage" class="result-box"></div>
+        </section>
+    </main> 
+    
+    <footer>
+        <p>&copy; 2025 FF. Hak Cipta Dilindungi.</p>
+        <div class="social-links">
+            <a href="@fayyadhfarhan_" target="https://accountscenter.instagram.com/accounts/" aria-label="Instagram Perusahaan">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Facebook Perusahaan">
+                <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+        </div>
+        <p>Hubungi Kami: fayyadhfrhn@gmail.com | Telp: 082284592477</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk mendapatkan nama dari pengguna (Sapaan)
+        function getAndDisplayUserName() {
+            // 1. Cek apakah nama sudah tersimpan di browser (LocalStorage)
+            let storedName = localStorage.getItem('userName');
+            
+            let userName;
+            
+            if (storedName) {
+                // Jika sudah ada, gunakan nama yang tersimpan
+                userName = storedName;
+            } else {
+                // Jika belum ada, minta input nama dari pengguna
+                userName = prompt("Hai! Siapa nama Anda?");
+                
+                // Cek apakah pengguna menginput nama atau membatalkan (Cancel)
+                if (userName && userName.trim() !== "") {
+                    // Jika nama diisi, simpan di LocalStorage untuk kunjungan berikutnya
+                    localStorage.setItem('userName', userName.trim());
+                } else {
+                    // Jika dibatalkan atau kosong, gunakan nama default
+                    userName = "Tamu";
+                }
+            }
+
+            // 2. Tampilkan nama di elemen HTML
+            const usernameElement = document.getElementById('username');
+            if (usernameElement) {
+                usernameElement.textContent = userName;
+            }
+        }
+
+        // FUNGSI BARU (Formulir Kontak)
+        function setupContactForm() {
+            const form = document.getElementById('messageForm');
+            const resultDiv = document.getElementById('resultMessage');
+
+            form.addEventListener('submit', function(event) {
+                // 1. Mencegah form melakukan submit default (reload halaman)
+                event.preventDefault(); 
+                
+                // 2. Validasi Kustom (Contoh: Validasi panjang pesan)
+                const messageInput = document.getElementById('message').value;
+                if (messageInput.length < 10) {
+                    resultDiv.innerHTML = '<p class="error">❌ Pesan Anda terlalu pendek. Minimal 10 karakter.</p>';
+                    resultDiv.style.backgroundColor = '#f8d7da';
+                    resultDiv.style.borderColor = '#f5c6cb';
+                    return; // Hentikan proses jika validasi gagal
+                }
+
+                // 3. Ambil Nilai dari Input
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = messageInput;
+
+                // 4. Tampilkan Hasil di HTML
+                const resultHTML = `
+                    <p class="success">✅ Terima kasih, ${name}! Pesan Anda telah diterima.</p>
+                    <p>Kami akan segera membalasnya ke <strong>${email}</strong>.</p>
+                    <hr>
+                    <h4>Detail Pesan Anda:</h4>
+                    <p>${message}</p>
+                `;
+
+                resultDiv.innerHTML = resultHTML;
+                resultDiv.style.backgroundColor = '#d4edda'; // Warna sukses
+                resultDiv.style.borderColor = '#c3e6cb';
+
+                // 5. Reset Formulir (Opsional)
+                form.reset();
+            });
+        }
+
+        // Jalankan semua fungsi yang dibutuhkan saat halaman selesai dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            getAndDisplayUserName(); // Jalankan sapaan
+            setupContactForm();      // Setup formulir kontak
+        });
+    </script>
+</body>
+</html>

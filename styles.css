@@ -1,0 +1,496 @@
+/* --- GAYA TAMBAHAN UNTUK PROFIL LENGKAP --- */
+
+/* Modifikasi Visi Misi ke Grid */
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.vm-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.vm-card i {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.vision {
+    background-color: #e6f7ff; /* Lebih terang */
+}
+
+.mission {
+    background-color: #ffffff;
+    border: 1px solid #cceeff;
+}
+
+.vm-card h3 {
+    color: #343a40;
+}
+
+.vm-card ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.vm-card ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.vm-card ul li::before {
+    content: '\2022'; /* Titik Bulat */
+    color: #007bff; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Nilai Inti (Core Values) */
+.core-values {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.value-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.value-item i {
+    color: #28a745; /* Warna hijau untuk nilai inti */
+    margin-bottom: 10px;
+}
+
+.value-item h4 {
+    margin-top: 0;
+    color: #343a40;
+}
+
+/* Statistik Perusahaan */
+.stats-section {
+    background-color: #007bff; /* Latar belakang biru untuk kontras */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.stats-section h2 {
+    color: white;
+}
+
+.separator.white {
+    background-color: white;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    padding: 20px;
+}
+
+.stat-item i {
+    margin-bottom: 15px;
+}
+
+.stat-item .number {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.stat-item .label {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+/* Responsiveness tambahan */
+@media (max-width: 600px) {
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* --- GAYA TAMBAHAN UNTUK FORMULIR KONTAK --- */
+.contact-form-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    color: #007bff;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Hanya izinkan resize secara vertikal */
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Kotak Pesan Hasil */
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid;
+    text-align: left;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.result-box .success {
+    color: #155724; /* Warna teks hijau tua */
+    font-weight: bold;
+}
+
+.result-box .error {
+    color: #721c24; /* Warna teks merah tua */
+    font-weight: bold;
+}
+
+.result-box hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* ================================================= */
+/* === 6. RESPONSIVE DESIGN (MEDIA QUERIES) ======== */
+/* ================================================= */
+
+/* Aturan berlaku untuk layar dengan lebar MAKSIMAL 768px (Tablet ke bawah) */
+@media (max-width: 768px) {
+    
+    /* Global dan Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+        position: static; /* Non-sticky di mobile agar tidak memakan ruang */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        /* Anda mungkin perlu menambahkan fungsi JavaScript untuk menu 'hamburger'
+           jika ingin menu ini tersembunyi/ditampilkan */
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    /* Banner */
+    .hero-banner {
+        height: 25vh; /* Kurangi tinggi banner di mobile */
+    }
+
+    .banner-content h1 {
+        font-size: 2em;
+    }
+    
+    .banner-content p {
+        font-size: 1em;
+    }
+
+    /* Konten Utama (Main) */
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    /* Visi dan Misi */
+    /* Ubah dari grid 2 kolom menjadi stack 1 kolom */
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Nilai Inti */
+    /* Grid akan menyesuaikan secara otomatis (auto-fit) */
+
+    /* Statistik */
+    .stats-section {
+        padding: 40px 10px;
+        margin-top: 20px;
+    }
+    
+    .stats-grid {
+        flex-direction: column; /* Ubah dari baris menjadi kolom */
+    }
+
+    .stat-item {
+        padding: 15px 0;
+    }
+
+    .stat-item .number {
+        font-size: 2.5em; /* Kecilkan ukuran angka */
+    }
+    
+    /* Formulir Kontak */
+    .contact-form-section {
+        padding: 20px;
+        margin: 30px auto;
+    }
+    
+    .btn-submit {
+        width: 100%; /* Tombol submit penuh lebar */
+    }
+    
+    /* Footer */
+    /* Gaya untuk Tautan Sosial Media di Footer */
+footer {
+    /* Pastikan pengaturan lama footer (background, color, padding) tetap ada */
+    /* ... */
+}
+
+.social-links {
+    margin: 10px 0 15px 0;
+}
+
+.social-links a {
+    color: white; /* Warna ikon putih */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffc107; /* Warna ikon berubah kuning saat dihover */
+}
+
+/* Memastikan ikon Font Awesome tampil */
+.fab {
+    font-family: 'Font Awesome Brands';
+}
+    }
+
+
+/* Aturan berlaku untuk layar dengan lebar MAKSIMAL 480px (Ponsel Sangat Kecil) */
+@media (max-width: 480px) {
+    .banner-content h1 {
+        font-size: 1.5em;
+    }
+    .about-company h2, .core-values h2, .stats-section h2 {
+        font-size: 1.8em;
+    }
+}
+/* GAYA BARU UNTUK HEADER LAMAN KONTAK */
+.page-header {
+    background-color: #343a40; /* Warna gelap */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #007bff;
+}
+
+.page-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+/* Modifikasi pada form agar tampil di tengah (tanpa konten lain) */
+.contact-form-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Responsiveness untuk header baru */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 10px;
+    }
+}
+/* Dalam file styles.css */
+
+.logo-bulat {
+    /* 1. PASTIKAN LEBAR DAN TINGGI SAMA PERSIS */
+    /* Saya menggunakan 120px, Anda bisa menyesuaikan */
+    width: 120px;
+    height: 120px; 
+    
+    /* 2. INI KRUSIAL: Memastikan gambar mengisi area 120x120px */
+    /* Jika gambar aslinya persegi panjang, ini akan memotong sisi terpanjang
+       sehingga gambar terlihat utuh di bingkai persegi. */
+    object-fit: cover; 
+    
+    /* 3. Hapus properti pembentuk lainnya (seperti clip-path dan border-radius) */
+    
+    /* Opsional: Tampilan tambahan */
+    border: 3px solid #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Dalam file styles.css */
+
+/* 1. Pengaturan untuk Kontainer Form Login */
+.login-container {
+    /* Mendorong kontainer login ke paling kanan. */
+    /* Jika .navbar menggunakan display: flex, ini akan bekerja. */
+    margin-left: auto; 
+    padding-right: 20px; /* Jarak dari tepi kanan */
+}
+
+/* 2. Gaya untuk Form Login itu sendiri */
+.login-form {
+    display: flex; /* Untuk menyejajarkan input dan tombol */
+    gap: 10px; /* Jarak antara elemen form */
+    align-items: center; /* Memastikan semuanya sejajar vertikal */
+}
+
+/* 3. Gaya untuk Input Text dan Password */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 120px; /* Atur lebar input agar ringkas */
+}
+
+/* 4. Gaya untuk Tombol Login */
+.btn-login {
+    padding: 6px 12px;
+    background-color: #007bff; /* Warna tombol, sesuaikan dengan tema Anda */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+/* Opsional: Sesuaikan tata letak Navbar Anda jika diperlukan */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Untuk menjaga jarak antara elemen */
+    align-items: center;
+    padding: 10px 0; /* Sesuaikan padding vertikal */
+}
+
+/* Pastikan nav-links tidak mengganggu */
+.nav-links {
+    margin: 0 20px; /* Jaga jarak dari logo dan form login */
+}
+/* Dalam file styles.css */
+
+body {
+    /* Properti dasar background gambar (Sama seperti Pilihan 2) */
+    background-image: url('IMG-20241118.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    
+    /* PENTING: Mengatur posisi relatif agar pseudo-element bisa diletakkan di atas */
+    position: relative; 
+    min-height: 100vh; /* Memastikan body mengisi setidaknya 100% tinggi viewport */
+}
+
+/* Lapisan (Overlay) Transparan */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ganti warna overlay (misalnya hitam dengan sedikit transparansi) */
+    background-color: rgba(0, 0, 0, 0.5); 
+    /* Nilai 0.5 berarti 50% transparan */
+    
+    z-index: -1; /* Mengirim overlay ke belakang konten */
+}
+
+/* Pastikan semua section dan main memiliki z-index yang lebih tinggi */
+main, .navbar, footer {
+    position: relative;
+    z-index: 1; 
+    /* Mengatur z-index 1 agar konten (teks, link, dll.) tampil di atas overlay */
+}
